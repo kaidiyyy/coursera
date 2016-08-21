@@ -1,7 +1,7 @@
 # "Guess the number" mini-project
 import math
 import random
-import SimpleGUICS2Pygame
+import simplegui
 # initialize global variables used in your code here
 number_range = 100
 secret_number = 0
@@ -64,7 +64,7 @@ def input_guess(guess):
 
 
 # create frame
-f = SimpleGUICS2Pygame.create_frame("Guess the number", 200, 200)
+f = simplegui.create_frame("Guess the number", 200, 200)
 f.add_button("Range is [0,100)", range100, 200)
 f.add_button("Range is [0,1000)", range1000, 200)
 f.add_input("Enter a guess", input_guess, 200)
